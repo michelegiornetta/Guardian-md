@@ -6066,7 +6066,7 @@ img {
 
 .main-header {
   position: fixed;
-  z-index: 100; }
+  z-index: 1; }
   .main-header .mdl-navigation__link {
     font-weight: bold;
     color: #303030; }
@@ -6109,3 +6109,6 @@ img {
     -webkit-flex-direction: column;
     -ms-flex-direction: column;
     flex-direction: column; }
+
+#contacts {
+  padding: 3em 0; }

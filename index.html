@@ -12,8 +12,8 @@
 <body>
 
 <!-- HEADER -->
-  <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header main-header">
-    <header class="mdl-layout__header">
+  <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+    <header class="mdl-layout__header main-header">
       <div class="mdl-layout__header-row">
         <!-- Title -->
         <span class="mdl-layout-title">
@@ -25,9 +25,9 @@
         <div class="mdl-layout-spacer"></div>
         <!-- Navigation. We hide it in small screens. -->
         <nav class="mdl-navigation mdl-layout--large-screen-only">
-          <a class="mdl-navigation__link" href="">PRODUCTS</a>
-          <a class="mdl-navigation__link" href="">ABOUT</a>
-          <a class="mdl-navigation__link" href="">CONTACTS</a>
+          <a class="mdl-navigation__link" href="#products">PRODOTTI</a>
+          <a class="mdl-navigation__link" href="">CHI SIAMO</a>
+          <a class="mdl-navigation__link" href="">CONTATTACI</a>
         </nav>
       </div>
     </header>
@@ -42,7 +42,7 @@
   </section>
 
 <!-- PRODUCTS -->
-  <section class="products">
+  <section class="products" id="products">
     <div class="container grid">
       <div class="col-6">
         <img src="img/paga.png"/>
@@ -50,7 +50,7 @@
       <div class="col-6 product-title">
         <h2>Un nuovo tornello per garantire il pagamento dei biglietti.</h2>
         <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--primary">
-          LEARN MORE
+          SCOPRI DI PIÙ
         </button>
       </div>
     </div>
@@ -58,7 +58,7 @@
       <div class="col-6 product-title">
         <h2>Un nuovo sistema di pagamento.</h2>
         <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--primary">
-          LEARN MORE
+          SCOPRI DI PIÙ
         </button>
       </div>
       <div class="col-6">
@@ -70,32 +70,32 @@
 <!-- ABOUT -->
   <section class="about" id="about">
     <div class="container">
-      <h1>ABOUT US</h1>
+      <h1>CHI SIAMO</h1>
     </div>
   </section>
 
 <!-- CONTACTS -->
   <section id="contacts">
     <div class="container">
-      <h1>CONTACT US</h1>
-      <p>If you want to ask us something or talk about a project feel free to contact us</p>
+      <h1>CONTATTACI</h1>
+      <p>Se vuoi chiederci qualcosa o proporci un progetto, lasciaci pure un messaggio.</p>
       <form>
         <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-          <input class="mdl-textfield__input" type="text">
-          <label class="mdl-textfield__label" for="sample1">Your name</label>
+          <input class="mdl-textfield__input" type="text"/>
+          <label class="mdl-textfield__label">Nome</label>
         </div>
         <br>
         <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-          <input class="mdl-textfield__input" type="text">
-          <label class="mdl-textfield__label" for="sample1">Your email</label>
+          <input class="mdl-textfield__input" type="text"/>
+          <label class="mdl-textfield__label">Indirizzo email</label>
         </div>
         <br>
         <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
           <textarea class="mdl-textfield__input" type="text" rows= "3"></textarea>
-          <label class="mdl-textfield__label" for="sample5">Your message for us</label>
+          <label class="mdl-textfield__label">Messaggio</label>
         </div>
         <br>
-        <input type="submit" value="SEND" class="mdl-button mdl-js-button mdl-button--raised">
+        <input type="submit" value="INVIA" class="mdl-button mdl-js-button mdl-button--raised">
       </form>
   </section>
 
@@ -104,8 +104,8 @@
     <div class="mdl-mini-footer__left-section">
       <div class="mdl-logo">GUARDIAN</div>
         <ul class="mdl-mini-footer__link-list">
-          <li><a href="#">Help</a></li>
-          <li><a href="#">Privacy & Terms</a></li>
+          <li><a href="#">Aiuto</a></li>
+          <li><a href="#">Codice etico</a></li>
         </ul>
       </div>
     </div>
