@@ -5978,8 +5978,9 @@ iframe.heightSet {
 .demo-wrapper iframe {
   border: 1px solid rgba(0, 0, 0, 0.5); }
 
-h1, h2, p, a {
-  color: #212121; }
+h1, h2, p, a, li {
+  color: #212121;
+  font-family: "Roboto", sans-serif; }
 
 *, *::before, *::after {
   box-sizing: border-box;
@@ -5995,6 +5996,11 @@ img {
 
 .container {
   width: 90%;
+  margin: 0 auto;
+  max-width: 1200px; }
+
+.container-tight {
+  width: 60%;
   margin: 0 auto;
   max-width: 1200px; }
 
@@ -6078,9 +6084,8 @@ i {
     color: #212121; }
 
 .main-hero {
-  background: #212121;
   height: 100vh;
-  background-size: cover;
+  background: #212121;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -6093,11 +6098,21 @@ i {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center; }
-  .main-hero h1, .main-hero h2 {
-    margin-bottom: 1em;
-    color: white;
-    float: left;
-    font-size: 60px; }
+  .main-hero div {
+    margin: 8em 0; }
+    .main-hero div h1, .main-hero div h2 {
+      margin-bottom: 1em;
+      color: white;
+      float: left;
+      display: inline-block;
+      font-size: 60px; }
+    .main-hero div img {
+      float: left; }
+  .main-hero a {
+    display: inline-block; }
+    .main-hero a i {
+      font-size: 100px;
+      margin: 0; }
 
 .products {
   padding: 3em 0;
@@ -6140,4 +6155,10 @@ i {
   padding: 3em 0; }
 
 footer.mdl-mini-footer {
-  background: #212121; }
+  background: #212121;
+  margin: 0; }
+  footer.mdl-mini-footer .mdl-logo {
+    font-size: 1.5em;
+    text-decoration: none; }
+  footer.mdl-mini-footer li, footer.mdl-mini-footer a {
+    color: white; }
